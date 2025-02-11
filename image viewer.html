@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+		<title>Hello, World!</title>
+		
+		<style>
+		*{
+				padding:0;
+				margin:0; 
+				border-radius:10px;
+		}
+		body{
+				padding:5px;
+		}
+		h1{
+				width:100%;
+				margin:10px auto;
+		}
+		#container{
+				border:10px groove blue;
+				height:480px;
+				width:720px;
+		}
+		#disimg{
+				height:480px;
+				width:720px;
+				border-radius:0;
+		}
+		#img-containers{
+				height:100px;
+				width:720px; 
+				margin:30px auto;
+				display:flex;
+				justify-content:space-between;
+				
+		}
+		#mindiv{
+				width:100%;
+				height:100px;
+				border:solid 1px blue;
+				margin:0 3px 0 3px;
+				
+				& img{
+						height:100%;
+						width:100%;
+				}
+		}
+		
+		
+		
+		
+		</style>
+		
+		
+		
+</head>
+<body>
+		<center>
+				<h1>click on any image</h1>
+		<div id="container">
+				<img src="images/a.jpg" id="disimg">
+		</div>
+		<div id="img-containers">
+				<div id="mindiv"><img src="images/a.jpg" alt="a" onclick="a()"></div>
+						<div id="mindiv"><img src="images/b.jpg" alt="b" onclick="b()"></div>
+				<div id="mindiv"><img src="images/c.jpg" alt="c" onclick="c()"></div>
+				<div id="mindiv"><img src="images/d.jpg" alt="d" onclick="d()"></div>
+				<div id="mindiv"><img src="images/e.jpg" alt="e" onclick="e()"></div>
+		</div>
+		
+		
+		</center>
+		
+		
+		
+		<script>
+		
+				var change= document.getElementById("disimg");
+		
+		function a()
+		{
+		 change.src="images/a.jpg";
+		}
+		function b()
+		{
+		 change.src="images/b.jpg";
+		}
+		function c()
+		{
+		 change.src="images/c.jpg";
+		}
+		function d()
+		{
+		 change.src="images/d.jpg";
+		}
+		function e()
+		{
+		 change.src="images/e.jpg";
+		}
+		
+		</script>
+		
+</body>
+</html>
